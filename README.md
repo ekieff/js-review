@@ -1,2 +1,2 @@
-# js-review
+# JavaScript-review
 This is my review of JavaScript.
