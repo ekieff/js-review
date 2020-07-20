@@ -65,3 +65,31 @@ const home = {
         console.log(headerTwo);
 
 ```
+## Event Listeners
+    ```javascript
+    const headerThree = document.createElement('h2');
+    headerThree.textContent = 'Friends';
+
+    container.appendChild(headerThree);
+
+    const list = document.createElement('ul');
+
+    // iterate through my friends array 
+    for (let i = 0; i < friends.length; i++){
+        let eachFriend = friends[i];
+        console.log(eachFriend);
+        //creat an element
+        const listItem = document.createElement('li');
+        listItem.textContent = eachFriend;
+        //append item to list
+        list.appendChild(listItem);
+    }
+
+    console.log(list);
+
+    //listening for a click
+    headerThree.addEventListener('click', function(){
+        container.appendChild(list);
+    });
+    ```
+    

@@ -87,7 +87,8 @@ printFriends(tesla.foundingMembers);
 //DOM
     const container = document.querySelector('.container');
     console.log(container);
-
+    
+    //create an element
     const headerTwo = document.createElement('h2');
     headerTwo.textContent = 'My First JS Review';
     console.log(headerTwo);
@@ -95,8 +96,43 @@ printFriends(tesla.foundingMembers);
     container.appendChild(headerTwo);
 
     //add a class to headerTwo
-    headerTwo.classList.add('sub-title');
+    headerTwo.classList.add('sub-title', 'header-two');
     //headerTwo.setAttribute('class', 'header-two');
+    
+    //remove classsList
     headerTwo.classList.remove('header-two');
     console.log(headerTwo);
+headerTwo.addEventListener('click', function(){
+    headerTwo.textContent = 'Elaine';
+});
 
+    // make another element
+const headerThree = document.createElement('h2');
+headerThree.textContent = 'Friends';
+
+container.appendChild(headerThree);
+
+const list = document.createElement('ul');
+
+// iterate through my friends array 
+for (let i = 0; i < friends.length; i++){
+    let eachFriend = friends[i];
+    console.log(eachFriend);
+    //creat an element
+    const listItem = document.createElement('li');
+    listItem.textContent = eachFriend;
+    //append item to list
+    list.appendChild(listItem);
+}
+
+console.log(list);
+
+//listening for a click
+headerThree.addEventListener('click', function(){
+    container.appendChild(list);
+});
+
+// reference each friend 
+// create a li 
+// add textContent to that li
+// append that to a ul (unordered list)
