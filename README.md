@@ -23,3 +23,21 @@ const home = {
         console.log("Next we will need to replace " + this.rooms.kitchen);
     }
     } 
+```
+## Examples of Functions
+``` javascript
+    // standard function
+    function addNumbers(num1, num2){
+        return num1 + num2;
+    };
+
+    // function expression
+    const multiplyNumbers = function(num1, num2){
+        return num1 * num2;
+    };
+
+    // arrow function
+    const subtractNumbers = (num1, num2) => {
+        return num1 - num2;
+    };
+    ```
