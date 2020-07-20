@@ -1,3 +1,4 @@
+//different types of variables
 let name = 'Elaine Kieffer';
 let age = 26;
 let isCool = true;
@@ -12,7 +13,7 @@ const home = {
         kitchen: 'Backsplash',
         Bathroom: 'Tile',
         Bedroom: 'flooring'
-    },
+    }, //including a function within objects
     nextUpdate: function(){
         console.log("Next we will need to replace " + home.updates.kitchen);
     }
@@ -83,3 +84,19 @@ printFriends(tesla.foundingMembers);
     const subtractNumbers = (num1, num2) => {
         return num1 - num2;
     };
+//DOM
+    const container = document.querySelector('.container');
+    console.log(container);
+
+    const headerTwo = document.createElement('h2');
+    headerTwo.textContent = 'My First JS Review';
+    console.log(headerTwo);
+
+    container.appendChild(headerTwo);
+
+    //add a class to headerTwo
+    headerTwo.classList.add('sub-title');
+    //headerTwo.setAttribute('class', 'header-two');
+    headerTwo.classList.remove('header-two');
+    console.log(headerTwo);
+
