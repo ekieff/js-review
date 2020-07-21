@@ -19,8 +19,14 @@ isInside(arrayNames, 'adams');
 //reorder the separate elements
 //return new string
 
-
-
+function reverseString (string) {
+    var newString ='';
+    for (var i = string.length - 1; i >= 0; i--){
+        newString += string[i];
+    }
+    return newString;
+}
+console.log(reverseString('Hello I am Elaine'));
 
 //luckySevens(max)
 //a function that takes it's argument as the maximum number
