@@ -1,26 +1,25 @@
 //isInside
 //isInside(['taylor', 'rome', 'adam'], 'rome'); // => true
 // isInside(['pete', 'adam', 'taylor'], 'fred'); // => false
+
+let result;
 const arrayNames = ['taylor', 'rome', 'adam', 'elaine', 'subrata'];
-var result = true;
 function isInside(array, ele) {
-    for (i = 0; i < array.length; i++){
-        console.log(array[i]);
-        if (array[i] === ele){
-         result = true;
-         } else if (array[i] !== ele){
-         result = false;
-         }
+    if (array.indexOf(ele) <= array.length && array.indexOf(ele) >= 0 ) {
+        console.log('True');
+    } else {
+        console.log('False')
     }
-console.log(result);
-};
-isInside(arrayNames, 'adam');
+}
+isInside(arrayNames, 'adams');
 
 //reverseStr
 //set an array with a string
 //split the element in the array to separate
 //reorder the separate elements
 //return new string
+
+
 
 
 //luckySevens(max)
