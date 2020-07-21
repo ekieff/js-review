@@ -36,7 +36,7 @@ console.log(reverseStr('Hello I am Elaine'));
 function luckySevens (max) {
     let result = [];
     for (let i = 0; i <= max; i++){
-        if (i % 7 === 0) {
+        if (i % 7 === 0 && i>0) {
             result.push(i);
     }}
     return result;
