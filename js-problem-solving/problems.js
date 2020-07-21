@@ -45,7 +45,14 @@ console.log(luckySevens(14));
 
 //copyMachine
 //create an element that logs for num the string of element
-
+function copyMachine (element, num) {
+let result = [];
+for (let i = 1; i <= num; i ++){
+    result.push(element);
+}
+return result;
+}
+console.log(copyMachine('hello', 6));
 //everyOtherWord
 //function wordYeller(sentence); takes in a string.
 //split each word of the sentence, then check each word for punctuation if...! if else add !
