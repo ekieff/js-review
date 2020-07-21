@@ -54,8 +54,23 @@ return result;
 }
 console.log(copyMachine('hello', 6));
 //everyOtherWord
-//function wordYeller(sentence); takes in a string.
-//split each word of the sentence, then check each word for punctuation if...! if else add !
+//splits sentence into an array with each sentence = an element in the array
+//returns each odd numbered array
+
+
+function everyOtherWord(sentence){
+    const newString = sentence.split(' ');
+    const everyOther = [];
+    for(let i = 0; i <= newString.length; i ++){
+        if (i % 2 == 0){
+            everyOther.push(newString[i]);
+        }
+    }
+console.log(everyOther);
+
+};
+everyOtherWord('hello how are you doing on this lovely day');
+
 
 //wordYeller
 // function that splits a string into different strings.
