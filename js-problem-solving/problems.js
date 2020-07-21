@@ -19,20 +19,29 @@ isInside(arrayNames, 'adams');
 //reorder the separate elements
 //return new string
 
-function reverseString (string) {
+function reverseStr (str) {
     var newString ='';
-    for (var i = string.length - 1; i >= 0; i--){
-        newString += string[i];
+    for (var i = str.length - 1; i >= 0; i--){
+        newString += str[i];
     }
     return newString;
 }
-console.log(reverseString('Hello I am Elaine'));
+console.log(reverseStr('Hello I am Elaine'));
 
 //luckySevens(max)
 //a function that takes it's argument as the maximum number
 //starts at 0 runs to max, ie, (i = 0, i <= max, i++)
 //for loop identifies if i is % by 7, logs in return
 //result in array
+function luckySevens (max) {
+    let result = [];
+    for (let i = 0; i <= max; i++){
+        if (i % 7 === 0) {
+            result.push(i);
+    }}
+    return result;
+};
+console.log(luckySevens(14));
 
 //copyMachine
 //create an element that logs for num the string of element
@@ -50,7 +59,4 @@ console.log(reverseString('Hello I am Elaine'));
 //function that runs through an array with strings where if = 'el' returns true else = false
 
 //evenCaps
-//function to change caps to uppercase if index is 0 %2, starts with value uppercase.
-
-
-
+//function to change caps to uppercase if index is 0 %2, starts with value uppercase
