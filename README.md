@@ -92,4 +92,14 @@ const home = {
         container.appendChild(list);
     });
     ```
-    
+Solving problems logic
+
+- [ ] Do I understand what the prompt is asking?
+- [ ] Am I able to break the problem down?
+- [ ] What is my strategy for solving the problem?
+- [ ] Do I understand what my code is doing?
+- [ ] Am I able to foresee any edge cases?
+- [ ] Am I able to track the order of the code that is being executed?
+- [ ] Am I able to track the values of the variables?
+- [ ] Am I able to walk through my code line by line with an example?
+- [ ] Do I have a working solution?

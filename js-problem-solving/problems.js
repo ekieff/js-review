@@ -67,7 +67,6 @@ function everyOtherWord(sentence){
         }
     }
 console.log(everyOther);
-
 };
 everyOtherWord('hello how are you doing on this lovely day');
 
@@ -76,6 +75,7 @@ everyOtherWord('hello how are you doing on this lovely day');
 // function that splits a string into different strings.
 //then identifies with if if each of those elements contains punctuation, if not...adds !
 //returns new string.
+
 
 //arraySubstring
 //function that runs through an array with strings where if = 'el' returns true else = false

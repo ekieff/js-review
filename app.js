@@ -102,13 +102,17 @@ printFriends(tesla.foundingMembers);
     //remove classsList
     headerTwo.classList.remove('header-two');
     console.log(headerTwo);
-headerTwo.addEventListener('click', function(){
+    headerTwo.addEventListener('click', function(){
     headerTwo.textContent = 'Elaine';
 });
 
     // make another element
 const headerThree = document.createElement('h2');
 headerThree.textContent = 'Friends';
+// reference each friend 
+// create a li 
+// add textContent to that li
+// append that to a ul (unordered list)
 
 container.appendChild(headerThree);
 
@@ -132,7 +136,4 @@ headerThree.addEventListener('click', function(){
     container.appendChild(list);
 });
 
-// reference each friend 
-// create a li 
-// add textContent to that li
-// append that to a ul (unordered list)
+
